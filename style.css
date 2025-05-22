@@ -1,0 +1,329 @@
+/* Estilizando o body */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #f1f8e9); /* Gradiente suave */
+    /* Fontes do Google Fonts - Escolha uma ou combine! */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Arial', sans-serif; /* Padrão se as de cima não forem usadas */
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background-color: #4CAF50; /* Verde principal */
+    color: white;
+    padding: 25px; /* Mais preenchimento */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+    margin-bottom: 30px; /* Mais espaço abaixo */
+    background: linear-gradient(to right, #4CAF50, #66BB6A); /* Gradiente no header */
+}
+
+header h1 {
+    font-size: 3rem; /* Título maior */
+    /* font-family: 'Montserrat', sans-serif; */ /* Sugestão de fonte para título */
+    margin-bottom: 5px;
+}
+
+header .lead {
+    font-size: 1.3rem; /* Texto de apoio maior */
+    color: #e8f5e9; /* Cor mais suave */
+    letter-spacing: 0.5px; /* Pequeno espaçamento entre letras */
+}
+
+/* Estilizando o parágrafo */
+p {
+    font-size: 1.15rem; /* Um pouco maior */
+    line-height: 1.7; /* Espaçamento de linha confortável */
+    color: #333;
+    margin: 20px 0;
+    text-align: justify; /* Texto justificado para melhor leitura */
+}
+
+/* Estilizando as imagens */
+.section-img {
+    border: 3px solid #cfe8c8; /* Borda mais fina e verde claro */
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15); /* Sombra mais suave e espalhada */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transição mais suave */
+    cursor: pointer;
+}
+
+.section-img:hover {
+    transform: scale(1.03); /* Escala ligeiramente menor para sutileza */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25); /* Sombra mais intensa no hover */
+}
+
+/* Estilizando os cards */
+.card {
+    border: none;
+    border-radius: 15px; /* Bordas bem arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra mais definida */
+    background-color: #fff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transição para hover */
+    margin-bottom: 25px; /* Espaço entre cards */
+    padding: 15px; /* Preenchimento interno */
+}
+
+.card:hover {
+    transform: translateY(-8px); /* Elevação maior no hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
+}
+
+.card-body h2 {
+    color: #2e7d32; /* Títulos dos cards em um verde mais escuro */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e8f5e9; /* Linha sutil abaixo do título */
+    padding-bottom: 10px;
+}
+
+/* Estilizando a caixa de acesso rápido */
+.quick-access-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0; /* Borda mais clara */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    padding: 20px; /* Mais preenchimento */
+    position: fixed;
+    top: 120px; /* Deslocado para baixo */
+    right: 25px; /* Deslocado para a direita */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+    z-index: 1000;
+    width: 200px; /* Largura fixa para melhor visualização */
+}
+
+.quick-access-box h5 {
+    font-size: 1.1rem; /* Título maior */
+    margin-bottom: 15px;
+    color: #4CAF50; /* Cor do título da caixa */
+    text-transform: uppercase; /* Em maiúsculas */
+}
+
+.quick-access-box ul {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0;
+}
+
+.quick-access-box li {
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+.quick-access-box a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.05rem; /* Tamanho da fonte ligeiramente maior */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.quick-access-box a:hover {
+    color: #2e7d32; /* Verde mais escuro no hover */
+    text-decoration: underline;
+}
+
+/* Estilizando os elementos flutuantes */
+.floating-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Garante que os ícones não bloqueiem cliques */
+    z-index: 500;
+    overflow: hidden; /* Garante que os elementos não causem scroll */
+}
+
+.float-icon {
+    position: absolute;
+    opacity: 0.6; /* **AUMENTADO SIGNIFICATIVAMENTE: Mais visível** */
+    animation: floatAnimation 15s infinite ease-in-out; /* Animação mais longa */
+}
+
+.leaf {
+    width: 100px; /* **AUMENTADO: Folha bem maior** */
+    top: 15%;
+    left: 8%;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.building {
+    width: 100px; /* **AUMENTADO: Prédio bem maior** */
+    top: 65%;
+    right: 7%;
+    animation-delay: 3s;
+    animation-duration: 15s;
+}
+
+/* --- Estilos para as novas imagens flutuantes (descomente e ajuste se usar no HTML) --- */
+
+/* Exemplo de nova imagem: Abelha */
+/*
+.bee {
+    width: 80px;
+    top: 30%;
+    left: 20%;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation: floatAnimation 10s infinite ease-in-out;
+}
+*/
+
+/* Exemplo de nova imagem: Nuvem */
+/*
+.cloud {
+    width: 130px;
+    top: 5%;
+    right: 15%;
+    animation-delay: 5s;
+    animation-duration: 18s;
+    animation: floatAnimation 18s infinite ease-in-out;
+    opacity: 0.5;
+}
+*/
+
+/* Exemplo de nova imagem: Engrenagem */
+/*
+.gear {
+    width: 90px;
+    top: 80%;
+    left: 30%;
+    animation-delay: 2s;
+    animation-duration: 13s;
+    animation: floatAnimation 13s infinite ease-in-out;
+}
+*/
+
+/* --- Fim dos estilos para as novas imagens flutuantes --- */
+
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0.6; /* **Opacidade aumentada no início da animação** */
+    }
+    25% {
+        transform: translateY(-20px) translateX(15px) rotate(7deg); /* Movimento um pouco maior */
+        opacity: 0.7; /* **Pico de opacidade durante a animação, bem visível** */
+    }
+    50% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translateY(20px) translateX(-15px) rotate(-7deg); /* Movimento um pouco maior */
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0.6;
+    }
+}
+
+/* Estilizando o footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    padding: 20px; /* Mais preenchimento */
+    margin-top: 60px; /* Mais espaço acima do footer */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra para cima */
+    background: linear-gradient(to right, #66BB6A, #4CAF50); /* Gradiente no footer */
+}
+
+footer p {
+    color: #e8f5e9; /* Cor do texto do footer */
+    margin: 0; /* Remove margem padrão do parágrafo */
+    font-size: 0.95rem;
+}
+
+/* Ajustando o toast */
+.toast-container {
+    z-index: 1050;
+}
+
+.toast {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #4CAF50; /* Borda com a cor principal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toast-header {
+    background-color: #4CAF50;
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 10px 15px;
+}
+
+.toast-body {
+    color: #333;
+    padding: 15px;
+}
+
+/* Ajustando tooltips */
+.tooltip-inner {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    opacity: 0.95; /* Um pouco mais opaco */
+}
+
+.tooltip .tooltip-arrow::before {
+    border-top-color: #4CAF50;
+}
+
+/* Garantindo visibilidade do conteúdo (para animações de entrada futuras) */
+.section {
+    opacity: 1; /* Padrão, pode ser modificado com JS para animações de scroll */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transição para futuras animações */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 992px) {
+    .quick-access-box {
+        position: static; /* Volta para fluxo normal em telas menores */
+        width: auto;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .quick-access-box ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Quebra linha se muitos itens */
+    }
+    .quick-access-box li {
+        margin: 0 10px 10px 10px;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    .card-body h2 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .floating-elements {
+        display: none; /* Esconde elementos flutuantes em telas menores para não atrapalhar */
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header .lead {
+        font-size: 1rem;
+    }
+    .section-img {
+        margin-bottom: 15px; /* Espaço entre imagens empilhadas */
+    }
+}

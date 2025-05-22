@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>O Campo e a Cidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container text-center">
+        <h1>O Campo e a Cidade</h1>
+        <p class="lead">Explorando a interdependência entre a natureza e a urbanização</p>
+    </header>
+
+    <div class="quick-access-box">
+        <h5>Navegação Rápida</h5>
+        <ul class="list-unstyled">
+            <li><a href="#section1" class="quick-link" aria-label="Navegar para História">História</a></li>
+            <li><a href="#section2" class="quick-link" aria-label="Navegar para Urbanização">Urbanização</a></li>
+            <li><a href="#section3" class="quick-link" aria-label="Navegar para Sustentabilidade">Sustentabilidade</a></li>
+        </ul>
+    </div>
+
+    <div class="floating-elements">
+        <img src="img/QTFWeWtmZE09.webp" alt="Folha flutuante" class="float-icon leaf">
+        <img src="img/NF82NDAuanBn.webp" alt="Prédio flutuante" class="float-icon building">
+        </div>
+
+    <div class="container mt-4">
+        <div class="row section" id="intro">
+            <div class="col-md-6">
+                <img src="img/cereals-6508088_960_720.jpg" alt="Cereais" class="img-fluid section-img" data-bs-toggle="tooltip" data-bs-placement="top" title="A produção de cereais é essencial para a alimentação global." onclick="showToast('Cereais')">
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Uma Conexão Essencial</h3>
+                        <p>A conexão entre campo e cidade é uma relação de interdependência histórica e econômica: o campo produz alimentos e matérias-primas, enquanto a cidade transforma esses recursos e oferece serviços e produtos industrializados. Esse vínculo reflete modos de vida distintos, mas complementares, moldando a sociedade ao longo dos séculos. Com a urbanização e o êxodo rural, as cidades cresceram, enquanto o campo se modernizou, criando uma dinâmica complexa que envolve aspectos sociais, econômicos e ambientais. Essa relação é vital para a sustentabilidade e o equilíbrio do planeta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <img src="img/paisagem-prado-ensolarado.jpg" alt="Fazenda" width="300" height="300" class="m-2 section-img" data-bs-toggle="tooltip" data-bs-placement="top" title="As fazendas sustentam a vida urbana." onclick="showToast('Fazenda')">
+            <img src="img/vista-aerea-complexa-da-cidade.jpg" alt="Cidade" width="300" height="300" class="m-2 section-img" data-bs-toggle="tooltip" data-bs-placement="top" title="As cidades transformam recursos do campo." onclick="showToast('Cidade')">
+        </div>
+
+        <div id="section1" class="container mt-4 section">
+            <div class="card">
+                <div class="card-body">
+                    <h2>História da Interdependência</h2>
+                    <p>Desde os tempos antigos, o campo e a cidade têm se influenciado mutuamente. A agricultura foi a base das primeiras civilizações, fornecendo alimentos e recursos para o surgimento das cidades. Vilas se transformaram em centros de comércio, cultura e inovação, enquanto o campo permanecia como o coração da produção. No Brasil, por exemplo, a economia colonial dependia das plantações de cana-de-açúcar e café, que abasteciam cidades como Salvador e Rio de Janeiro. Essa relação moldou não apenas a economia, mas também a cultura e a organização social.</p>
+                    <img src="img/MDguanBn.webp" alt="Vila antiga" class="img-fluid section-img mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="As vilas antigas deram origem às cidades modernas." onclick="showToast('Vila Antiga')">
+                </div>
+            </div>
+        </div>
+
+        <div id="section2" class="container mt-4 section">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Impactos da Urbanização</h2>
+                    <p>A urbanização trouxe mudanças profundas para o campo e a cidade. O crescimento das áreas urbanas frequentemente reduz terras agrícolas, mas também estimula a inovação no campo, como o uso de tecnologias para aumentar a produtividade. No Brasil, o agronegócio se modernizou com máquinas e técnicas avançadas, enquanto as cidades se tornaram hubs de processamento e distribuição. Contudo, a urbanização descontrolada pode levar a problemas como poluição e desigualdade social, exigindo um equilíbrio entre o crescimento urbano e a preservação rural.</p>
+                    <img src="img/by5qcGc.webp" alt="Fazenda moderna" class="img-fluid section-img mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="A tecnologia transformou a agricultura." onclick="showToast('Fazenda Moderna')">
+                </div>
+            </div>
+        </div>
+
+        <div id="section3" class="container mt-4 section">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Sustentabilidade</h2>
+                    <p>A sustentabilidade é o futuro da relação entre campo e cidade. Práticas agrícolas sustentáveis, como a agricultura orgânica e a rotação de culturas, preservam o solo e a biodiversidade. Nas cidades, iniciativas como hortas urbanas e o incentivo ao consumo de produtos locais fortalecem essa conexão. Além disso, tecnologias como energia renovável e sistemas de irrigação eficiente estão transformando o campo, enquanto as cidades investem em mobilidade sustentável e reciclagem. Juntos, campo e cidade podem construir um futuro mais equilibrado e resiliente.</p>
+                    <img src="img/RT0.webp" alt="Cidade sustentável" class="img-fluid section-img mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Cidades sustentáveis promovem equilíbrio." onclick="showToast('Cidade Sustentável')">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5 py-3">
+        <p>© 2025 O Campo e a Cidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="customToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Notificação</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
